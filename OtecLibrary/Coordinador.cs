@@ -11,7 +11,10 @@ namespace OtecLibrary
         private int Id_Coordinador;
         private string Nombre;
         private Sede sede;
+        public Coordinador()
+        {
 
+        }
         public Coordinador(int id_Coordinador, string nombre, Sede sede)
         {
             Id_Coordinador1 = id_Coordinador;

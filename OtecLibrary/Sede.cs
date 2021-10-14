@@ -13,8 +13,7 @@ namespace OtecLibrary
         private Administrador Administrador;
         private List<Curso> cursos;
         public Sede()
-        {
-
+        { 
         }
         public Sede(int id_Sede, string nombre, Administrador administrador, List<Curso> cursos)
         {
