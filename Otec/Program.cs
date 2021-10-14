@@ -21,17 +21,23 @@ namespace Otec
             lista.Add(asignatura1);
             lista.Add(asignatura2);
             Curso curso = new Curso(1, "Hackeo Etico I", coordinador, lista);
+            List<Asignatura> lista2 = new List<Asignatura>(lista);
+            lista2.Remove(asignatura2);
+            Curso curso2 = new Curso(2, "Hackeo Etico II", coordinador, lista2);
             List<Curso> cursos = new List<Curso>();
             cursos.Add(curso);
+            cursos.Add(curso2);
             Sede sede = new Sede(1, "Los Angeles", administrador, cursos);
-            Console.WriteLine("Sede: ",sede.Nombre);
-            Console.WriteLine("Administrador sede: ", sede.Administrador.Nombre);
+            Console.WriteLine("Sede: "+sede.Nombre);
             Console.WriteLine("Datos del Administrador: ");
-            Console.WriteLine("Administrador rut: ", sede.Administrador.Rut);
-            Console.WriteLine("Administrador Direccion: ", sede.Administrador.Direccion);
-            Console.WriteLine("Administrador Numero: ", sede.Administrador.Telefono);
-            Console.WriteLine("Administrador Correo: ", sede.Administrador.Correo);
-            Console.WriteLine("Cantidad de Cursos: ", sede.Cursos.Count());
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("Administrador Nombre: " + sede.Administrador.Nombre);
+            Console.WriteLine("Administrador rut: "+ sede.Administrador.Rut);
+            Console.WriteLine("Administrador Direccion: "+ sede.Administrador.Direccion);
+            Console.WriteLine("Administrador Numero: "+ sede.Administrador.Telefono);
+            Console.WriteLine("Administrador Correo: "+ sede.Administrador.Correo);
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("Cantidad de Cursos: "+ sede.Cursos.Count());
             string listaCursos="";
             foreach (var item in sede.Cursos)
             {
@@ -44,10 +50,14 @@ namespace Otec
                     listaAsignaturas += "Profesor de la Asignatura: " + dato.Profesor + "\n";
 
                 }
-                listaCursos += "Asignaturas del curso:" + listaAsignaturas;
+                listaCursos += "-----------------------------------------------------------------------------------------------------------------------\n";
+                listaCursos += "Asignaturas del curso: \n" + listaAsignaturas;
+                listaCursos += "-----------------------------------------------------------------------------------------------------------------------\n";
 
             }
-            Console.WriteLine("Lista de cursos: ", listaCursos);
+            Console.WriteLine("Lista de cursos: ");
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine(listaCursos);
             Console.ReadKey();
 
         }
