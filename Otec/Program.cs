@@ -11,7 +11,7 @@ namespace Otec
     {
         static void Main(string[] args)
         {
-            Asignatura asignatura
+            Asignatura asignatura = new Asignatura(1, "Matematica", "Diego Sandoval");
             Sede sede = new Sede();
         }
     }

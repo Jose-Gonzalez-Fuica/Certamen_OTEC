@@ -10,7 +10,6 @@ namespace OtecLibrary
     {
         private int Id_Coordinador;
         private string Nombre;
-        private Sede sede;
         public Coordinador()
         {
 
@@ -19,11 +18,9 @@ namespace OtecLibrary
         {
             Id_Coordinador1 = id_Coordinador;
             Nombre1 = nombre;
-            this.Sede = sede;
         }
 
         public int Id_Coordinador1 { get => Id_Coordinador; set => Id_Coordinador = value; }
         public string Nombre1 { get => Nombre; set => Nombre = value; }
-        internal Sede Sede { get => sede; set => sede = value; }
     }
 }
