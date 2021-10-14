@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OtecLibrary
 {
-    class Curso
+    public class Curso
     {
         private int id_Curso;
         private string nombre;

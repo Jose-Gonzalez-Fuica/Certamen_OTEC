@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OtecLibrary;
 
 namespace Otec
 {
@@ -10,6 +11,8 @@ namespace Otec
     {
         static void Main(string[] args)
         {
+            Asignatura asignatura
+            Sede sede = new Sede();
         }
     }
 }
