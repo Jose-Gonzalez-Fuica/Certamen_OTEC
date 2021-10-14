@@ -8,19 +8,19 @@ namespace OtecLibrary
 {
     public class Coordinador
     {
-        private int Id_Coordinador;
-        private string Nombre;
+        private int id_Coordinador;
+        private string nombre;
         public Coordinador()
         {
 
         }
-        public Coordinador(int id_Coordinador, string nombre, Sede sede)
+        public Coordinador(int id_Coordinador, string nombre)
         {
-            Id_Coordinador1 = id_Coordinador;
-            Nombre1 = nombre;
+            Id_Coordinador = id_Coordinador;
+            Nombre = nombre;
         }
 
-        public int Id_Coordinador1 { get => Id_Coordinador; set => Id_Coordinador = value; }
-        public string Nombre1 { get => Nombre; set => Nombre = value; }
+        public int Id_Coordinador { get => id_Coordinador; set => id_Coordinador = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
     }
 }
