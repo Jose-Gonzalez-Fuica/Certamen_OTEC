@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtecLibraryRepos", "OtecLib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtecWebApi", "OtecWebApi\OtecWebApi.csproj", "{D78B1100-3AFB-4D30-B647-5C0B2179DA23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtecForms", "OtecForms\OtecForms.csproj", "{3F4D6FCA-44F7-4685-91F6-E3FBD3437C00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D78B1100-3AFB-4D30-B647-5C0B2179DA23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D78B1100-3AFB-4D30-B647-5C0B2179DA23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D78B1100-3AFB-4D30-B647-5C0B2179DA23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F4D6FCA-44F7-4685-91F6-E3FBD3437C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4D6FCA-44F7-4685-91F6-E3FBD3437C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4D6FCA-44F7-4685-91F6-E3FBD3437C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4D6FCA-44F7-4685-91F6-E3FBD3437C00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
