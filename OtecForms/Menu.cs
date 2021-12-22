@@ -19,13 +19,13 @@ namespace OtecForms
 
         private void asignaturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Asignatura form = new Asignatura();
+            AsignaturaForm form = new AsignaturaForm();
             form.Show();
         }
 
         private void coordinadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Coordinador form = new Coordinador();
+            AdministradorForm form = new AdministradorForm();
             form.Show();
         }
     }

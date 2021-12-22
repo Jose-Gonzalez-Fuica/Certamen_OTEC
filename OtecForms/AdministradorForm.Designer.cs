@@ -1,7 +1,7 @@
 ﻿
 namespace OtecForms
 {
-    partial class Coordinador
+    partial class AdministradorForm
     {
         /// <summary>
         /// Required designer variable.

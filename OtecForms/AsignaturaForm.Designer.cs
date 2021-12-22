@@ -1,7 +1,7 @@
 ﻿
 namespace OtecForms
 {
-    partial class Asignatura
+    partial class AsignaturaForm
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -35,7 +35,7 @@ namespace OtecForms
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -56,6 +56,8 @@ namespace OtecForms
             this.dgvAsignatura.Name = "dgvAsignatura";
             this.dgvAsignatura.Size = new System.Drawing.Size(893, 438);
             this.dgvAsignatura.TabIndex = 0;
+            this.dgvAsignatura.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAsignatura_CellDoubleClick);
+            this.dgvAsignatura.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAsignatura_CellEndEdit);
             // 
             // TxtProfesor
             // 
@@ -97,15 +99,17 @@ namespace OtecForms
             this.btnAgregar.TabIndex = 19;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // button2
+            // btnLimpiar
             // 
-            this.button2.Location = new System.Drawing.Point(396, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 45);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Location = new System.Drawing.Point(396, 12);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(145, 45);
+            this.btnLimpiar.TabIndex = 18;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnGuardar
             // 
@@ -137,6 +141,7 @@ namespace OtecForms
             // 
             // Id
             // 
+            this.Id.DataPropertyName = "id_asignatura";
             this.Id.HeaderText = "Id";
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
@@ -145,6 +150,7 @@ namespace OtecForms
             // 
             // Nombre
             // 
+            this.Nombre.DataPropertyName = "nombre";
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
             this.Nombre.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -152,12 +158,13 @@ namespace OtecForms
             // 
             // Profesor
             // 
+            this.Profesor.DataPropertyName = "profesor";
             this.Profesor.HeaderText = "Profesor";
             this.Profesor.Name = "Profesor";
             this.Profesor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Profesor.Width = 300;
             // 
-            // Asignatura
+            // AsignaturaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,14 +173,15 @@ namespace OtecForms
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.TxtProfesor);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvAsignatura);
-            this.Name = "Asignatura";
+            this.Name = "AsignaturaForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.AsignaturaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsignatura)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -188,13 +196,13 @@ namespace OtecForms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Profesor;
-        private System.Windows.Forms.Button btnEditar;
     }
 }
 

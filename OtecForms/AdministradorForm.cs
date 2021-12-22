@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OtecForms
 {
-    public partial class Coordinador : Form
+    public partial class AdministradorForm : Form
     {
-        public Coordinador()
+        public AdministradorForm()
         {
             InitializeComponent();
         }

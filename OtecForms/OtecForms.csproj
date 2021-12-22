@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Asignatura.cs">
+    <Compile Include="AsignaturaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Asignatura.Designer.cs">
-      <DependentUpon>Asignatura.cs</DependentUpon>
+    <Compile Include="AsignaturaForm.Designer.cs">
+      <DependentUpon>AsignaturaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Coordinador.cs">
+    <Compile Include="AdministradorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Coordinador.Designer.cs">
-      <DependentUpon>Coordinador.cs</DependentUpon>
+    <Compile Include="AdministradorForm.Designer.cs">
+      <DependentUpon>AdministradorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -66,11 +66,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Asignatura.resx">
-      <DependentUpon>Asignatura.cs</DependentUpon>
+    <EmbeddedResource Include="AsignaturaForm.resx">
+      <DependentUpon>AsignaturaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Coordinador.resx">
-      <DependentUpon>Coordinador.cs</DependentUpon>
+    <EmbeddedResource Include="AdministradorForm.resx">
+      <DependentUpon>AdministradorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
