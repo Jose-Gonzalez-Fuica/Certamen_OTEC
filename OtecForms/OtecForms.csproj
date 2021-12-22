@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcercaDeForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDeForms.Designer.cs">
+      <DependentUpon>AcercaDeForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="AsignaturaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AcercaDeForms.resx">
+      <DependentUpon>AcercaDeForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AsignaturaForm.resx">
       <DependentUpon>AsignaturaForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -106,6 +116,9 @@
       <Project>{20ff3e10-f69e-4b78-b451-ca6227498caa}</Project>
       <Name>OtecLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_Otec_en_Resolución_Mundo_ACHS.290x200.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,5 +28,11 @@ namespace OtecForms
             AdministradorForm form = new AdministradorForm();
             form.Show();
         }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AcercaDeForms form = new AcercaDeForms();
+            form.Show();
+        }
     }
 }
