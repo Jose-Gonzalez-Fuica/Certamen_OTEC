@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace OtecLibraryRepos
 {
-    class CoordinadorRepo
+    public class CoordinadorRepo
     {
         Datos data = new Datos();
         public List<Coordinador> listadoCoordinador()
