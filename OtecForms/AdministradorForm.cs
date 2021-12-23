@@ -36,23 +36,23 @@ namespace OtecForms
             string CorreoValidar = txtCorreo.Text;
             if (string.IsNullOrEmpty(NombreValidar) || NombreValidar.Trim() == string.Empty)
             {
-                advertencia = "\nNombre";
+                advertencia += "\nNombre";
             }
             if (string.IsNullOrEmpty(RUTValidar) || RUTValidar.Trim() == string.Empty)
             {
-                advertencia = "\nRUT";
+                advertencia += "\nRUT";
             }
             if (string.IsNullOrEmpty(DireccionValidar) || DireccionValidar.Trim() == string.Empty)
             {
-                advertencia = "\nDireccion";
+                advertencia += "\nDireccion";
             }
             if (string.IsNullOrEmpty(TelefonoValidar) || TelefonoValidar.Trim() == string.Empty)
             {
-                advertencia = "\nTelefono";
+                advertencia += "\nTelefono";
             }
             if (string.IsNullOrEmpty(CorreoValidar) || CorreoValidar.Trim() == string.Empty)
             {
-                advertencia = "\nCorreo";
+                advertencia += "\nCorreo";
             }
 
             if (string.IsNullOrEmpty(advertencia))
@@ -152,7 +152,7 @@ namespace OtecForms
 
                 if (string.IsNullOrEmpty(nombre) || nombre.Trim() == string.Empty)
                 {
-                    advertencia = "\nNombre";
+                    advertencia += "\nNombre";
                 }
                 if (string.IsNullOrEmpty(RUT) || RUT.Trim() == string.Empty)
                 {
@@ -160,15 +160,15 @@ namespace OtecForms
                 }
                 if (string.IsNullOrEmpty(direccion) || direccion.Trim() == string.Empty)
                 {
-                    advertencia = "\nDireccion";
+                    advertencia += "\nDireccion";
                 }
                 if (string.IsNullOrEmpty(telefono) || telefono.Trim() == string.Empty)
                 {
-                    advertencia = "\nTelefono";
+                    advertencia += "\nTelefono";
                 }
                 if (string.IsNullOrEmpty(correo) || correo.Trim() == string.Empty)
                 {
-                    advertencia = "\nCorreo";
+                    advertencia += "\nCorreo";
                 }
 
 
